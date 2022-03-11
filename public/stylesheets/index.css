@@ -85,6 +85,39 @@ body {
   margin-bottom: 0.5em;
 }
 
+.load-pres h1::after {
+  content: "";
+  animation: loaddots 1.5s 1s linear infinite;
+}
+
+.loaded .load-pres h1::after {
+  animation: died;
+}
+
+@keyframes loaddots {
+  0% {
+    content: "";
+  }
+  12.5% {
+    content: ".";
+  }
+  25% {
+    content: "..";
+  }
+  37.5% {
+    content: "...";
+  }
+  50% {
+    content: "..";
+  }
+  62.5% {
+    content: ".";
+  }
+  75% {
+    content: "";
+  }
+}
+
 @keyframes letters-in {
   to {
     letter-spacing: 1px;
@@ -279,6 +312,35 @@ main,
   transition: opacity 1s 1s ease, transform 0.7s 1s ease;
 }
 
+.slide--seen > *:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.slide--seen > *:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.slide--seen > *:nth-child(4) {
+  transition-delay: 0.4s;
+}
+.slide--seen > *:nth-child(5) {
+  transition-delay: 0.6s;
+}
+.slide--seen > *:nth-child(6) {
+  transition-delay: 0.8s;
+}
+
+.slide-btn {
+  color: var(--clr-white);
+  text-decoration: none;
+  padding: 0.5em 0.8em;
+  font-size: 1.2rem;
+  background-color: var(--clr-primary);
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em auto;
+  display: block;
+  width: fit-content;
+}
+
 .slide--seen > * {
   opacity: 1;
   transform: translateY(0px);
@@ -330,6 +392,12 @@ main,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.poets__poet p {
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: 2em 0;
 }
 
 .poets__poet-divider {
@@ -452,6 +520,19 @@ main,
 
 /* Poems comparison */
 
+.comparison {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.comparison p {
+  max-width: 85ch;
+  padding: 1em 0;
+  margin: 0 auto;
+}
+
 /* Refs */
 
 .references {
@@ -561,6 +642,7 @@ main,
   border-radius: 4px;
   border: none;
   transition: transform 0.35s cubic-bezier(0.45, 0.11, 0.25, 2.19), opacity 1s ease;
+  transition-delay: 0s !important;
 }
 
 .celebrate button:hover {
