@@ -27,7 +27,7 @@
     </audio>
 
     <div class="load-pres">
-      <h1>Presentation Loading...</h1>
+      <h1>Presentation Loading</h1>
       <button><i class="fa-solid fa-play"></i> Start</button>
       <div class="load-pres-waves">
         <div class="wave"></div>
@@ -61,7 +61,12 @@
             <div class="poets__poet__image">
               <img src="./public/assets/images/thomas bergersen.jpg" alt="Thomas Bergersen" />
             </div>
-            <p></p>
+            <p>
+              Thomas Bergersen a Norwegian composer born July 4, 1980 who writes music for his co-founded company, Two Steps From Hell. The company focuses
+              primarily on instrumental movie and trailer music. They have made countless soundtracks for movies such as Aquaman, Pirates of the Caribbean,
+              Harry Potter, The Avengers, and X-Men to name a few. Thomas has said he draws his inspiration from his emotions, romantic relationships, and
+              anything “unique and beautiful” in his surroundings.
+            </p>
           </div>
           <div class="poets__poet-divider">
             <div class="poets__poet-divider-line"></div>
@@ -73,9 +78,14 @@
             <div class="poets__poet__image">
               <img src="./public/assets/images/lord byron.jpg" alt="Lord Byron" />
             </div>
-            <p></p>
+            <p>
+              Lord Bryon is an English romantic poet who lived from 1788-1824. He is considered as one of the greatest English poets of all time. His poems
+              reflect his life where he was known to have had many affairs with men and women, including his half sister. His life was filled with difficulties
+              due to his many relationships.
+            </p>
           </div>
         </div>
+        <a href="#poem1" class="slide-btn">Next</a>
       </section>
       <section class="slide poem poem1">
         <div class="poem-container" id="poem1">
@@ -142,7 +152,7 @@ Or caress your soul
             <source src="./public/assets/audio/Two Steps From Hell - Star Sky - Sample.mp3" type="audio/mpeg" />
           </audio>
         </div>
-        <a href="#poem2">Next</a>
+        <a href="#poem2" class="slide-btn">Next</a>
       </section>
       <section class="slide poem poem2">
         <div class="poem-container" id="poem2">
@@ -171,9 +181,21 @@ A heart whose love is innocent!
 </pre
           >
         </div>
+        <a href="#comparison" class="slide-btn">Next</a>
       </section>
-      <section class="slide comparison">
+      <section class="slide comparison" id="comparison">
         <h2>Comparison</h2>
+        <p>
+          Both poems focus on a similar theme of love and romance. Star Sky describes two lovers who cannot be with each other, while She Walks in Beauty is
+          about the beauty of a women where the narrator could possibly be their lover. The main difference between these poems is Star Sky is a more sorrow
+          tone as the lovers are unable to be with each other, while She Walks in Beauty is much more pleasant and heartwarming.
+        </p>
+        <br />
+        <p>
+          On the writing aspect, the ladder uses more rhymes than Star Sky and uses a different rhyming scheme. It also utilizes much more complex writing and
+          poetic techniques: especially heavy use of implications, reflecting how the poets are different themselves. The poets were born in completely
+          different time periods, influencing the context of the poems to be different in a multitude of ways such: as word choice.
+        </p>
       </section>
       <section class="slide references">
         <h2>Resources</h2>
@@ -185,7 +207,7 @@ A heart whose love is innocent!
             <a href="https://en.wikipedia.org/wiki/Two_Steps_from_Hell" target="_blank" rel="noopener noreferrer">Two Steps From Hell</a>
           </li>
           <li>
-            <a href="https://en.wikipedia.org/wiki/Thomas_Bergersen" target="_blank" rel="noopener noreferrer">Thomas Bergensen</a>
+            <a href="https://en.wikipedia.org/wiki/Thomas_Bergersen" target="_blank" rel="noopener noreferrer">Thomas Bergersen</a>
           </li>
         </ol>
       </section>
@@ -209,7 +231,7 @@ A heart whose love is innocent!
         ignore: "[data-scroll-ignore]",
         speed: 2000,
         // speedAsDuration: true,
-        easing: "easeOutQuad",
+        easing: "easeInOutQuad",
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
